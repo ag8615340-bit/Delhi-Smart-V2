@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Growth Analytics | Delhi Smart</title>
+    <link rel="stylesheet" href="index.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <div class="cursor"></div>
+    <div class="grid-overlay"></div>
+
+    <nav class="navbar">
+        <div class="logo">DELHI<span>ANALYTICS</span></div>
+        <ul class="nav-links">
+            <li><a href="index.html">DASHBOARD</a></li>
+            <li><a href="detail.html">18_POINTS</a></li>
+            <li><a href="#" class="btn-glow">LIVE_SYSTEM</a></li>
+        </ul>
+    </nav>
+
+    <div class="detail-container">
+        <header class="hero" style="height: 40vh;">
+            <div class="hero-content" data-aos="zoom-in">
+                <h1 class="glitch">Future <span>Projection.</span></h1>
+                <p>Data doesn't lie. These analytics demonstrate how this logic-based model will transform Delhi into India's primary GDP powerhouse.</p>
+            </div>
+        </header>
+
+        <section class="detail-section" data-aos="fade-up">
+            <div class="text-side">
+                <span class="step-number">ECONOMY_METRIC_01</span>
+                <h2>Exponential GDP Growth</h2>
+                <p class="problem-text">Currently, Delhi's economy is stagnant due to systemic inefficiencies and traffic congestion. Implementing the Smart Model will activate a 24/7 business cycle.</p>
+                <div class="solution-box">
+                    <h4>Economic Breakdown:</h4>
+                    <ul>
+                        <li><strong>Night Economy:</strong> 24/7 business hours can potentially triple tax collection without increasing current tax rates.</li>
+                        <li><strong>Asset Monetization:</strong> Rental revenue from bridge underpasses and utilized vacant plots will flow directly into the government treasury.</li>
+                        <li><strong>Efficiency Gain:</strong> Eliminating traffic gridlocks ensures fuel and time savings stay within the citizens' economy.</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="image-side chart-container">
+                <canvas id="gdpChart"></canvas>
+            </div>
+        </section>
+
+        <section class="detail-section" data-aos="fade-up">
+            <div class="text-side">
+                <span class="step-number">SECURITY_METRIC_02</span>
+                <h2>Crime Inversion Tracker</h2>
+                <p class="problem-text">Street crime persists as long as the environment provides opportunities. Our model systematically eliminates criminal hiding spots and escape routes.</p>
+                <div class="solution-box" style="border-left-color: var(--neon-pink);">
+                    <h4>Safety Analytics:</h4>
+                    <ul>
+                        <li><strong>Prevention:</strong> AI-enabled cameras detect suspicious behavioral patterns to dispatch units before a crime is committed.</li>
+                        <li><strong>Escape Rate:</strong> With high-speed tactical interceptors deployed, the probability of criminal escape is reduced to near zero.</li>
+                        <li><strong>Trust Index:</strong> Enhanced public safety at all hours drives market spending and boosts the local economy.</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="image-side chart-container">
+                <canvas id="crimeChart"></canvas>
+            </div>
+        </section>
+
+        <section class="detail-section" data-aos="fade-up">
+            <div class="text-side">
+                <span class="step-number">JOBS_METRIC_03</span>
+                <h2>Zero Unemployment Drive</h2>
+                <p class="problem-text">By creating new operational sectors, we provide the youth with skilled, permanent, and high-paying employment opportunities.</p>
+                <div class="solution-box" style="border-left-color: #00ff88;">
+                    <h4>Job Sectors:</h4>
+                    <ul>
+                        <li><strong>3-Shift Model:</strong> Transitioning to 24/7 operations creates three job openings for every single role through shift rotation.</li>
+                        <li><strong>Sustainability Jobs:</strong> Over 1.5 Lakh blue-collar roles in solar grid maintenance and waste-to-brick plants.</li>
+                        <li><strong>Smart Monitoring:</strong> Increased demand for technical staff to manage AI surveillance and drone patrolling systems.</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="image-side chart-container">
+                <canvas id="jobChart"></canvas>
+            </div>
+        </section>
+
+        <section class="detail-section" data-aos="fade-up">
+            <div class="text-side">
+                <span class="step-number">ECOLOGY_METRIC_04</span>
+                <h2>The Green Restoration (AQI)</h2>
+                <p class="problem-text">Pollution isn't just smog; it's a drain on life expectancy and productivity. Our target is a sustained AQI of less than 50.</p>
+                <div class="solution-box">
+                    <h4>Eco Logic:</h4>
+                    <ul>
+                        <li><strong>Renewable Grid:</strong> Shifting the entire city's lighting and transit systems to sustainable solar power.</li>
+                        <li><strong>Zero Idle Traffic:</strong> Smooth traffic flow reduces engine idling time, cutting urban emissions by approximately 40%.</li>
+                        <li><strong>Waste Repurposing:</strong> Converting waste into construction bricks instead of incineration eliminates toxic landfill emissions.</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="image-side chart-container">
+                <canvas id="aqiChart"></canvas>
+            </div>
+        </section>
+
+        <section class="detail-section" data-aos="fade-up">
+            <div class="text-side">
+                <span class="step-number">INFRA_METRIC_05</span>
+                <h2>Urban Efficiency Index</h2>
+                <p class="problem-text">Infrastructure is truly 'smart' only when it is self-sustaining and maximizes the time-efficiency of its citizens.</p>
+                <div class="solution-box" style="border-left-color: #f39c12;">
+                    <h4>Infra Stats:</h4>
+                    <ul>
+                        <li><strong>Connectivity:</strong> 24/7 EV shuttle availability with a maximum 2-minute wait time at all Metro stations.</li>
+                        <li><strong>Accountability:</strong> Strict contractor penalty laws ensure roads remain in peak condition year-round.</li>
+                        <li><strong>Density Control:</strong> Repurposing abandoned plots to divert commercial load away from main arterial roads.</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="image-side chart-container">
+                <canvas id="infraChart"></canvas>
+            </div>
+        </section>
+    </div>
+
+    <footer style="padding: 5rem 8%; text-align: center;">
+        <a href="index.html" class="btn-glow">BACK TO DASHBOARD</a>
+    </footer>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+        const opt = { 
+            responsive: true, 
+            plugins: { legend: { labels: { color: '#fff' } } },
+            scales: { 
+                y: { ticks: { color: '#94a3b8' }, grid: { color: 'rgba(255,255,255,0.05)' } },
+                x: { ticks: { color: '#94a3b8' }, grid: { display: false } }
+            }
+        };
+
+        // 1. GDP Chart
+        new Chart(document.getElementById('gdpChart'), {
+            type: 'line',
+            data: {
+                labels: ['2025', '2026', '2027', '2028'],
+                datasets: [
+                    { label: 'Current Delhi', data: [270, 290, 310, 330], borderColor: '#ff0055' },
+                    { label: 'Smart Delhi', data: [270, 480, 850, 1300], borderColor: '#00f2ff', fill: true, backgroundColor: 'rgba(0, 242, 255, 0.1)' }
+                ]
+            }, options: opt
+        });
+
+        // 2. Crime Chart
+        new Chart(document.getElementById('crimeChart'), {
+            type: 'bar',
+            data: {
+                labels: ['Theft', 'Snatching', 'Drug Sales'],
+                datasets: [
+                    { label: 'Current Status', data: [95, 85, 70], backgroundColor: '#ff0055' },
+                    { label: 'Smart Logic', data: [10, 5, 2], backgroundColor: '#00f2ff' }
+                ]
+            }, options: opt
+        });
+
+        // 3. Job Chart
+        new Chart(document.getElementById('jobChart'), {
+            type: 'doughnut',
+            data: {
+                labels: ['Service', 'Tech', 'Maintenance'],
+                datasets: [{ data: [50, 25, 25], backgroundColor: ['#00f2ff', '#00ff88', '#ff0055'] }]
+            }, options: { plugins: { legend: { position: 'bottom', labels: { color: '#fff' } } } }
+        });
+
+        // 4. AQI Chart
+        new Chart(document.getElementById('aqiChart'), {
+            type: 'line',
+            data: {
+                labels: ['Nov', 'Dec', 'Jan', 'Feb'],
+                datasets: [
+                    { label: 'Current AQI', data: [480, 550, 500, 400], borderColor: '#ff0055' },
+                    { label: 'Smart AQI', data: [60, 80, 75, 50], borderColor: '#00ff88' }
+                ]
+            }, options: opt
+        });
+
+        // 5. Infra Efficiency
+        new Chart(document.getElementById('infraChart'), {
+            type: 'polarArea',
+            data: {
+                labels: ['Flow', 'Solar', 'Waste', 'Roads'],
+                datasets: [{ data: [95, 100, 92, 98], backgroundColor: ['#00f2ff', '#00ff88', '#ff0055', '#f39c12'] }]
+            }, options: { plugins: { legend: { display: false } } }
+        });
+
+        const cursor = document.querySelector('.cursor');
+        document.addEventListener('mousemove', (e) => {
+            cursor.style.left = e.clientX + 'px';
+            cursor.style.top = e.clientY + 'px';
+        });
+    </script>
+</body>
+</html>

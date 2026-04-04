@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Delhi Smart | Tactical City Solutions</title>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="index.css">
+    <script src="index.js"></script>
+</head>
+<body>
+
+    <div class="cursor"></div>
+    <div class="grid-overlay"></div>
+    <div class="blob-glow"></div>
+
+    <nav class="navbar">
+        <div class="logo">
+            <i class="fas fa-microchip"></i> DELHI<span>SMART</span>
+        </div>
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#solutions">The Manifesto</a></li>
+            <li><a href="#" class="btn-glass">System Login</a></li>
+        </ul>
+    </nav>
+
+    <section class="hero" id="home">
+        <div class="hero-content" data-aos="zoom-out" data-aos-duration="1200">
+            <span class="badge-advanced animate-pulse">
+                <i class="fas fa-satellite-dish"></i> Decentralized Governance v2.0
+            </span>
+            <h1 class="glitch" data-text="Logic Over Bureaucracy.">Logic Over <span>Bureaucracy.</span></h1>
+            <p>Traditional methods have failed. We are rebuilding Delhi through engineering, AI, and pure logic. No excuses—only high-impact solutions.</p>
+            <div class="hero-btns">
+                <a href="detail.html" class="btn-glow" target="_blank">
+                    <span>DEPLOY SOLUTIONS</span>
+                    <i class="fas fa-bolt"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section class="services" id="solutions">
+        <div class="section-header" data-aos="fade-right">
+            <h2 class="section-heading">Smart Solutions for Core Issues</h2>
+            <p>Actionable intelligence to transform the capital city.</p>
+        </div>
+
+        <div class="card-grid">
+            <div class="glass-card-advanced" data-aos="fade-up">
+                <div class="card-tag status-critical">Priority 01</div>
+                <div class="card-icon red"><i class="fas fa-shield-halved"></i></div>
+                <h3>Z+ Tactical Patrol</h3>
+                <p>Equipping law enforcement with high-speed interceptors and tactical authority. Implementing live GPS tracking for night/morning patrols and AI-driven security upgrades.</p>
+                <div class="card-footer"><span>SYS: ENFORCEMENT_READY</span></div>
+            </div>
+
+            <div class="glass-card-advanced" data-aos="fade-up" data-aos-delay="100">
+                <div class="card-tag status-ai">Priority 02</div>
+                <div class="card-icon blue"><i class="fas fa-user-secret"></i></div>
+                <h3>Anti-Thief Grid</h3>
+                <p>Neutralizing hideouts for snatchers and street criminals. Deploying "Safe-Corridors" and specialized patrolling units to ensure absolute safety for women.</p>
+                <div class="card-footer"><span>SYS: ZERO_CRIME_LOGIC</span></div>
+            </div>
+
+            <div class="glass-card-advanced" data-aos="fade-up" data-aos-delay="200">
+                <div class="card-tag status-tech">Priority 03</div>
+                <div class="card-icon orange"><i class="fas fa-city"></i></div>
+                <h3>Bridge-Gap Economy</h3>
+                <p>Converting abandoned structures and bridge pillars into 24/7 micro-kiosks. Generating economic value by optimizing urban spaces and relocating illegal settlements.</p>
+                <div class="card-footer"><span>SYS: SPACE_OPTIMIZED</span></div>
+            </div>
+
+            <div class="glass-card-advanced" data-aos="fade-up" data-aos-delay="300">
+                <div class="card-tag status-live">Priority 04</div>
+                <div class="card-icon green"><i class="fas fa-bus-alt"></i></div>
+                <h3>Lane-Integrated Flow</h3>
+                <p>Dedicated lanes for E-Rickshaws and Buses. Relocating street vendors to unused "Waste Plots" to ensure 100% obstruction-free road traffic.</p>
+                <div class="card-footer"><span>SYS: TRAFFIC_ALPHA</span></div>
+            </div>
+
+            <div class="glass-card-advanced" data-aos="fade-up" data-aos-delay="400">
+                <div class="card-tag status-funding">Priority 05</div>
+                <div class="card-icon brown"><i class="fas fa-cubes"></i></div>
+                <h3>Landfill to Infrastructure</h3>
+                <p>Transforming landfill waste into construction-grade bricks. Mandatory solar lighting at every corner to achieve zero-grid dependency.</p>
+                <div class="card-footer"><span>SYS: CIRCULAR_WASTE</span></div>
+            </div>
+
+            <div class="glass-card-advanced" data-aos="fade-up" data-aos-delay="500">
+                <div class="card-tag status-critical">Priority 06</div>
+                <div class="card-icon red"><i class="fas fa-passport"></i></div>
+                <h3>Citizen Verification</h3>
+                <p>Identifying and deporting illegal residents and infiltrators. Securing Delhi's resources exclusively for Indian citizens.</p>
+                <div class="card-footer"><span>SYS: BORDER_SHIELD</span></div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>TERMINAL LOG: DELHI_SMART_SYSTEMS_2026 // NO_RESTRICTIONS_APPLIED</p>
+    </footer>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({ once: true });
+        
+        // Custom Cursor Logic
+        const cursor = document.querySelector('.cursor');
+        document.addEventListener('mousemove', (e) => {
+            cursor.style.left = e.clientX + 'px';
+            cursor.style.top = e.clientY + 'px';
+        });
+    </script>
+</body>
+</html>
